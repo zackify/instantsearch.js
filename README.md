@@ -54,13 +54,13 @@ yarn release
 ## Update docs
 
 ```sh
-yarn docs:update
+yarn docs:deploy:production
 ```
 
 ## Update deps
 
 ```sh
-yarn upgrade-deps
+yarn lib:upgrade-deps
 ```
 
 ## Project status

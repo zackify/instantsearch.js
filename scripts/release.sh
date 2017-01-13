@@ -62,7 +62,6 @@ mversion $newVersion
 
 mversion $newVersion
 yarn
-yarn build
 
 # update changelog
 printf "\n\nRelease: update changelog"
@@ -87,10 +86,8 @@ git push origin v2
 git push origin --tags
 
 (
-cd packages/react-instantsearch/dist
+cd packages/react-instantsearch
 npm publish # This cannot be moved to yarn yet
-cd ..
-rm -rf dist/
 )
 
 (
